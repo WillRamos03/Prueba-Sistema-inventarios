@@ -1,0 +1,36 @@
+CREATE DATABASE inventario;
+Use DATABASE invetario;
+
+-- Tabla producto
+
+CREATE TABLE productos(
+	Id int PRIMARY KEY AUTO_INCREMENT,
+	Nom_Producto varchar(100) not null,
+	Referencia varchar(100) not null,
+	Precio int not null,
+	Peso int not null ,
+	Categoría varchar(100) not null,
+	Stock int not null,
+	Fecha_Create date DEFAULT current_timestamp()
+);
+
+-- Tabla ventas
+
+CREATE TABLE Ventas (
+	Id_Vent int AUTO_INCREMENT PRIMARY KEY,
+    Id_Prod int not null,
+    Cantidad_Vendida int not null,
+    Valor_Total int not null,
+);
+
+ALTER TABLE ventas
+ADD FOREIGN KEY (Id_Prod) REFERENCES productos(Id);
+
+-- Tabla de usuarios
+
+CREATE TABLE users (
+	Id int AUTO_INCREMENT PRIMARY KEY,
+	Nombre varchar(100) NOT NULL,
+	Username varchar(100) NOT NULL,
+	Clave varchar(100) NOT NULL
+);

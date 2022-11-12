@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+<body>
+    <div class = "content">
+        <h1>Iniciar Sesion</h1>   <br>
+        <form action="php/login.php" method="POST">
+            
+            <label for="username">Usuario: </label>
+            <br>
+            <input type="text" name="username" placeholder="Ingresa tu usuario :" required>
+            <br>
+            <label for="pass">Contraseña: </label>
+            <br>
+            <input type="password" name="password" placeholder="Ingresa tu contraseña :" required>
+            <br><br>
+            <input type="submit" class="btnLogin" value="Ingresar">
+        </form><br>
+        <a href="registrarse.html" class="regis">Registrar nuevo usuario</a>
+    </div>
+    <div class="footer">
+        <p>KONECTA Sistema de Inventarios</p>
+    </div>
+</body>
+</html>
