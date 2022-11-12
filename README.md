@@ -1,6 +1,6 @@
 # Prueba-Sistema-inventarios
 
-1. Ejecutar la Base de datos
+1. Ejecutar la Base de datos que se encuentra en Database/scriptDB
 
 2. Registrar un usuario en el sistema para loguear
 
